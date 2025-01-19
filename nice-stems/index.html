@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube URL Input</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Enter a YouTube URL</h1>
+    <form id="youtube-form">
+      <input type="url" id="youtube-url" placeholder="Paste YouTube URL here" required />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Processing... Please wait.</p>
+    </div>
+    <p id="output"></p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
